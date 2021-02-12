@@ -1,0 +1,134 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+.header{
+    height: 250px;
+    background-image: url('../images/pattern-bg.png');
+}
+
+.header h2{
+    padding: 35px 0;
+    text-align: center;
+    color: white;
+}
+
+.Search{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Search input{
+    width: 30vw;
+    min-width: 300px;
+    padding: 15px 13px;
+    border: none;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.Search input:focus{
+    outline: none;
+}
+
+.Search button{
+    padding: 15px 18px;
+    border-radius: 0px 10px 10px 0px;
+    background-color: black;
+    color: white;
+    font-weight: bolder;
+    border: none;
+    cursor: pointer;
+}
+
+.Search button:focus{
+    outline: none;
+}
+
+.error{
+    margin: 10px;
+    color: white;
+}
+
+.IpInfo{
+    height: 130px;
+    width: 60%;
+    min-width: 600px;
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 15px;
+    position: absolute;
+    left:0;
+    right: 0;
+    z-index: 1;
+    margin: auto;
+}
+
+.IpInfo h6{
+    font-weight: 500;
+    color: rgb(141, 138, 138);
+}
+
+.IpInfo span{
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(31, 30, 30);
+}
+
+.IpInfo div{
+    height: 60px;
+    width: 23%;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid rgb(219, 219, 219);
+}
+
+.isp{
+    border: none !important;
+}
+
+.isp span{
+    border: none !important;
+    font-size: clamp(0.8rem, 2vw, 0.8rem) !important;
+}
+
+.leaflet-container {
+    width: 100%;
+    height: 100vh;
+    z-index: 0;
+}
+
+@media only screen and (max-width: 600px) {
+    .IpInfo{
+        height: auto;
+        width: 90% !important;
+        min-width: 0;
+        flex-direction: column;    
+        top: 160px;    
+    }
+
+    .IpInfo div{
+        width: 100%;
+        border-right: none;
+        text-align: center;
+        justify-content: space-evenly;
+        padding: 20px 0px;
+    }
+
+    .leaflet-control-zoom-in, .leaflet-control-zoom-out{
+        display: none !important;
+    }
+
+    .Search input{
+        width: 77vw;
+        min-width: 0;
+    }
+  }
