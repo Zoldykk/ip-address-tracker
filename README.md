@@ -1,6 +1,6 @@
 
 
-My solution to the FrontendMentor.io IP Address Tracker web app challenge.
+My solution to the FrontendMentor.io IP Address Tracker challenge.
 
 Demo: https://ipaddress-tracker.herokuapp.com/
 
