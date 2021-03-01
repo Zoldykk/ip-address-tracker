@@ -2,7 +2,7 @@
 
 My solution to the FrontendMentor.io IP Address Tracker challenge.
 
-Demo: https://ipaddress-tracker.herokuapp.com/
+Demo: https://ip-addres-tracker.netlify.app/
 
 ## Challenge
     
